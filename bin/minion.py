@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+!/usr/bin/env python2.7
 """Creates and manages a folder full of reminder files.
 
 Usage:
@@ -297,8 +297,8 @@ def minion_openall(args):
 def minion_view(args):
     ''' Dump the contents of the chosen file(s) to standard out. '''
     match_files = get_match_files(args)
-    print "Outputting contents of %(number)d matches to search terms \
-        '%(terms)s'.".format(number=len(match_files), terms=args['<text>'])
+    print("Outputting contents of {number:d} matches to search terms " \
+        "{terms:s}.\n").format(number=len(match_files), terms=args['<text>'])
     for filename in match_files:
         brain.file_to_stdout(filename)
 

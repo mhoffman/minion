@@ -104,7 +104,6 @@ def _settings_parser(default_notes_dir='~/minion/notes'):
 
     return settings
 
-
 def get_settings(config_file=CONFIG_FILE):
     ''' Fetch all settings from config file.
     If config file does not exist, 
